@@ -1,0 +1,40 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "test"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to Simon"
+          ]
+        }
+      }
+    },
+	{
+      "name": "CALENDAR_EVENT_SELECTION",
+	  "fulfillment": {
+        "conversationName": "test"
+      },
+      "intent": {
+        "name": "ab.getCalanderEventSelected",
+        "trigger": {
+          "queryPatterns": [
+            "get calendar events"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "test": {
+      "name": "test",
+      "url": "https://115.69.83.44:3412"
+    }
+  },
+  "locale": "en"
+}
